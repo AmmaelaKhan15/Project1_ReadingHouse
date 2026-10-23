@@ -1,0 +1,118 @@
+body {
+    background-color: #F2E7D6;
+    margin-left: 30px ;
+    margin-top: 30px;
+}
+
+header {
+    color: #584842;
+}
+
+#bookTabs {
+    display: flex;
+    gap: 20px;
+}
+
+#readingBtn {
+    background-color: #afba9d;
+    padding-left: 8px;
+    padding-right:8px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    border-radius: 5px;
+    color: #584842;
+}
+
+
+#ToBeReadBtn {
+    background-color: #afba9d;
+    padding-left: 8px;
+    padding-right:8px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    border-radius: 5px;
+    color: #584842;
+}
+
+
+#readBtn {
+    background-color: #afba9d;
+    padding-left: 8px;
+    padding-right:8px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    border-radius: 5px;
+    color: #584842;
+}
+
+form {
+    color:#584842;
+}
+
+#add {
+    background-color: #afba9d;
+    padding-left: 7px;
+    padding-right:7px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: #584842;
+}
+
+footer {
+    color: #584842;
+}
+
+.book {
+    display: table;
+    background-color: #a9bac5;
+    padding: 20px;
+    border-radius: 8px;
+    color: #3a302c;
+    margin-bottom: 8px;
+}
+
+.book-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.boom-info{
+    flex: 1;
+}
+
+.book-info h4,
+.bookinfo p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.book button {
+    padding: 8px 10px;
+    margin-right: 8px;
+    margin-top: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #9AA28D;
+    border-radius: 5px;
+    color: #584842;
+}
+
+.finish-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    cursor: pointer;
+    flex-shrink:0;
+}
+
+.is-invalid {
+    border: 2px solid #ba6c54;
+    background-color: #B98272;
+}

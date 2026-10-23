@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Reading House</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- This is the top header of the page where the user can see the name of the project
+ as well as the greeting. -->
+
+    <header> 
+        
+        <h1> My Reading House </h1>
+        <p> Save all your reading adventures here in your very own reading house! </p>
+    
+    </header>
+
+<!-- This is the main html section of project where the different sections and the buttons
+ are allocated, as well as forms which is a the main element of this assignment and project.
+ There are divs added to give each sections its proper space in the webpage and also combine
+ related buttons together.-->
+
+    <main>
+
+<!-- Here is the first division of the webpage, right under the greeting. It has an "id"
+ letting me know this section is refering to the "bookTabs" or tabs where the users can 
+ switch between wether they are reading a book, a book is to be read or already read. -->
+
+        <div id ="bookTabs">
+
+<!-- Within this section there are 3 buttons each with its own "id" which is important when
+calling them while coding inthe Javascript file to make them actually clikable and allow for
+hiding and showing elements in the application
+
+the div and buttons are learned from task 1 of Workshop 4 from the html file -->
+
+            <button id="readingBtn"> 
+                Reading 
+            </button>
+
+            <button id="ToBeReadBtn"> 
+                To Be Read
+            </button>
+
+            <button id="readBtn"> 
+                Read
+             </button>
+                
+        </div>
+
+<!-- The <br> is added to give some space between the sections. -->
+
+        <br>
+
+<!-- This div  is for the actual form, it will allow the user to add in the 
+ title and author name for the books. It also includes the "add" button which allows
+ that form to submit to add that information to the application. 
+ 
+ This part of the code is inspired from task 4 of workshop 4 from the html file -->
+       
+        <div id="bookForm">
+
+            <form id="form"> 
+
+                <label for="bookTitle"> Title: </label> 
+                <input 
+                    type="text" 
+                    id="bookTitle">
+                    
+                <label for="bookAuthor"> Author: </label> 
+                <input 
+                    type="text" 
+                    id="bookAuthor">
+
+                <button id="add"> 
+                    Add 
+                </button>
+
+            </form>
+
+        </div>
+
+<!-- I know I need different sections to put the user book info in and so I created these three
+sub-sections that correspond with the 3 buttons added above in the code. It is a simple division
+for the three tabs, with their own id's to call in the js file. -->
+
+ <!-- This section is for books that the user is currently reading. The class is added for
+  the css file to be able to style the user responses from the form. They are all currently
+  hidden because they will only show when the corresponding button is clicked. For example
+  the webpage will only show "Books you're planning to read when the user clicks the "ToBeRead"
+  button. -->
+
+        <div id="readingTab" class="hidden"> 
+            <h3> Books you're currently reading! </h3>
+        </div>
+
+<!-- This section is for books that the user is going to reading.-->
+
+        <div id="ToBeReadTab"  class="hidden"> 
+            <h3> Books you're planning to read... </h3>
+        </div>
+
+<!-- This section is for books that the user has already read.-->
+
+        <div id="readTab"  class="hidden"> 
+            <h3> Books you've already completed! </h3>
+        </div>
+
+    </main>
+
+<!-- This is the footer, also known as the last section of the webpage and
+ it just has a sweet little message for the users.  -->
+    <footer> 
+        <br>
+        <p> Made for book lovers. </p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
